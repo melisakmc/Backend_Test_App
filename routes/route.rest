@@ -1,0 +1,55 @@
+GET http://localhost:3000/blog      
+
+###
+
+POST http://localhost:3000/blog
+Content-Type: application/json
+
+{
+    "title": "NYC Travel Guide",
+    "body": "The subway is the best way to get around NYC",
+    "listOfHashtags": ["#amazing", "#USA", "#travel", "#NYC", "#life"]
+}
+
+###
+
+POST http://localhost:3000/blog
+Content-Type: application/json
+
+{
+    "title": "Health and Fitness blog",
+    "body": "Don't underestimate nutrition facts",
+    "listOfHashtags": ["#amazing", "#health", "#fitness", "#life"]
+}
+
+###
+
+POST http://localhost:3000/blog
+Content-Type: application/json
+
+{
+    "title": "Magazine Blog",
+    "body": "Celebrity x spotted on NYC",
+    "listOfHashtags": ["#magazine", "#today", "#celebrity", "#news", "#NYC"]
+}
+
+###
+
+GET http://localhost:3000/blog/NYC
+
+###
+
+GET http://localhost:3000/blog/life
+
+###
+
+GET http://localhost:3000/blog/amazing
+
+
+###
+
+DELETE http://localhost:3000/blog/621103f756848418e0d27d5b
+
+###
+
+PATCH http://localhost:3000/blog/6211043e56848418e0d27d62
